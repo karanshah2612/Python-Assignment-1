@@ -1,17 +1,20 @@
 Write a Python program to print all positive numbers in a range.
 
 
-def posnumbers(s,e):
-    for num in range(s, e + 1):
-        if num > 0:
-            print(num)
+def posnumbers(numbers_list):
+    posnumbers = [num for num in numbers_list if num > 0]
+    print(posnumbers)
 
 
-start = int(input("Enter the starting number of the range: "))
-end = int(input("Enter the ending number of the range: "))
+list1 = [12, -7, 5, 64, -14]
+print("Input:", list1)
+print("Output:", end=" ")
+posnumbers(list1)
 
-print("Positive numbers in the range:")
-posnumbers(start, end)
+list2 = [12, 14, -95, 3]
+print("\nInput:", list2)
+print("Output:", end=" ")
+posnumbers(list2)
 
 
 
